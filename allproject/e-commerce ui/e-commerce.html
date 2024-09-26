@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syifacare</title>
+    <link rel="icon" type="image/x-icon" href="/docs/syifa care.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<style>
+    * {
+        scroll-behavior: smooth;
+    }
+
+    .gambar-categories {
+        box-shadow: 0px 0px 5px #c6c4c4;
+    }
+
+    .gambar-categories2 {
+        box-shadow: 0px 0px 5px #000000;
+        transition: 1s;
+    }
+
+    .gambar-categories2:hover {
+        transition: 1s;
+        box-shadow: 0px 0px 5px rgb(253 224 71);
+    }
+</style>
+
+<body>
+
+    <!-- Navbar Section -->
+
+    <section id="navbar1"
+        class="w-4/5 py-4 flex flex-row justify-between mx-auto items-center border-b border-gray-300  ">
+        <div class="sosmed sosmed cursor-pointer">
+            <a href="https://www.instagram.com/syifacareherbal/" target="_blank" rel="noopener noreferrer">
+                <ion-icon class="pr-1 text-2xl text-black hover:scale-110 duration-200" name="logo-instagram">
+                </ion-icon>
+            </a>
+            <a href="https://www.instagram.com/syifacareherbal/" target="_blank" rel="noopener noreferrer">
+                <ion-icon class="pr-1 text-2xl text-black hover:scale-110 duration-200" name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/syifacareherbal/" target="_blank" rel="noopener noreferrer">
+                <ion-icon class="pr-1 text-2xl text-black hover:scale-110 duration-200" name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/syifacareherbal/" target="_blank" rel="noopener noreferrer">
+                <ion-icon class="text-2xl text-black hover:scale-110 duration-200" name="logo-facebook"></ion-icon>
+            </a>
+        </div>
+        <div class="logo-brand flex felx-row">
+            <img src="/docs/syifa care.png" class="h-8 pr-1" alt="Ekal's Logo" />
+            <span
+                class="font-['poppins'] self-center text-2xl font-semibold whitespace-nowrap dark:text-black hover:tracking-wider duration-200">Syifacare</span>
+        </div>
+        <div class="icon-buy font-['poppins'] flex flex-row gap-4">
+            <button
+                class="overflow-hidden w-32 p-2 h-10 flex justify-center items-center bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative group">
+                Register ?
+
+                <span
+                    class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-100 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-right"></span>
+                <span
+                    class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-right"></span>
+                <span
+                    class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-right"></span>
+                <span
+                    class="flex justify-center items-center group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute z-10">
+                    Join Us 🤩</span>
+            </button>
+            <button
+                class="overflow-hidden px-2.5 py-2.5 h-10 flex justify-center items-center bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative group">
+                <ion-icon name="person-outline"></ion-icon>
+            </button>
+        </div>
+    </section>
+    <section id="navbar2"
+        class="sticky top-0 z-50 w-full bg-white py-5 flex flex-row justify-center items-center shadow ">
+        <button data-collapse-toggle="navbar-default" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+        <div class=" items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-default">
+            <ul
+                class="text-black flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                <li>
+                    <a href="#"
+                        class="font-['poppins'] font-semibold block py-2 px-2 md:p-0 md:hover:text-yellow-300 dark:text-black md:dark:hover:text-yellow-400 dark:hover:bg-yellow-400 rounded-lg dark:hover:text-white md:dark:hover:bg-transparent dark:border-yellow-500 duration-200">Home</a>
+                </li>
+                <p>|</p>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="font-['poppins'] font-semibold flex flex-row justify-center items-center py-2 px-3 md:p-0 md:hover:text-yellow-300 dark:text-black md:dark:hover:text-yellow-400
+                        dark:hover:bg-yellow-400 rounded-lg dark:hover:text-white md:dark:hover:bg-transparent dark:border-yellow-500
+                        duration-200">Categories
+                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar"
+                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-yellow-300 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-white" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/allproject/product-madu.html"
+                                    class="font-['poppins'] font-semibold block px-4 py-2 dark:hover:bg-white dark:hover:text-yellow-300">Honey</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="/allproject/product-susu.html"
+                                    class="font-['poppins'] font-semibold block px-4 py-2 dark:hover:bg-white dark:hover:text-yellow-300">Milk</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="/allproject/product-medicine.html"
+                                    class="font-['poppins'] font-semibold block px-4 py-2 dark:hover:bg-white dark:hover:text-yellow-300">Medicine</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <p>|</p>
+                <li>
+                    <a href="#categories"
+                        class="font-['poppins'] font-semibold block py-2 px-2 md:p-0 md:hover:text-yellow-300 dark:text-black md:dark:hover:text-yellow-400 dark:hover:bg-yellow-400 rounded-lg dark:hover:text-white md:dark:hover:bg-transparent dark:border-yellow-500 duration-200">Product</a>
+                </li>
+                <p>|</p>
+                <li>
+                    <a href="#rating-section"
+                        class="font-['poppins'] font-semibold block py-2 px-2 md:p-0 md:hover:text-yellow-300 dark:text-black md:dark:hover:text-yellow-400 dark:hover:bg-yellow-400 rounded-lg dark:hover:text-white md:dark:hover:bg-transparent dark:border-yellow-500 duration-200">Rating</a>
+                </li>
+                <p>|</p>
+                <li>
+                    <a href="#footer"
+                        class="font-['poppins'] font-semibold block py-2 px-2 md:p-0 md:hover:text-yellow-300 dark:text-black md:dark:hover:text-yellow-400 dark:hover:bg-yellow-400 rounded-lg dark:hover:text-white md:dark:hover:bg-transparent dark:border-yellow-500 duration-200">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- End Navbar Section -->
+
+    <!-- Carousel Section -->
+
+    <section id="carousel" class="w-5/6 mx-auto pt-12">
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-2xl md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/gambar depan 1.png"
+                        class="absolute block w-full rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/gambar depan 2.png"
+                        class="absolute block w-full rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/gambar depan 3.png"
+                        class="absolute block w-full rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/gambar depan 4.png"
+                        class="absolute block w-full rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/gambar depan 5.png"
+                        class="absolute block w-full rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Carousel Section -->
+
+    <!-- Hero Section -->
+
+    <section id="categories" class="w-5/6 mx-auto pt-12">
+        <div class="title-hero font-['cabin'] text-3xl pt-10">
+            <h1>Categories</h1>
+        </div>
+        <div class="content-hero flex flex-row justify-evenly items-center pt-5">
+            <div
+                class="container w-full h-auto grid justify-center grid-cols-3 max-md:grid-cols-1 max-md:gap-y-3 gap-2 gap-y-11 py-3 font-light font-['poppins']">
+
+                <div
+                    class="gambar-categories relative w-full h-full border-0 border-black rounded-lg inline-block group saturate-0 contrast-125 hover:saturate-150 hover:contrast-100 duration-300 max-md:contrast-100 max-md:saturate-100">
+                    <a href="/allproject/product-madu.html">
+                        <img src="/docs/Madu-Picture.png" alt="Your Image" class="w-full h-auto rounded-lg">
+                    </a>
+                    <div
+                        class="absolute text-4xl font-semibold text-black bottom-2 left-3 opacity-0 transition-opacity p-3 duration-300 group-hover:opacity-100 max-md:hidden">
+                        Madu
+                    </div>
+                </div>
+
+                <div
+                    class="gambar-categories relative w-full h-full border-0 border-black rounded-lg inline-block group saturate-0 contrast-125 hover:saturate-150 hover:contrast-100 duration-300 max-md:contrast-100 max-md:saturate-100">
+                    <a href="/allproject/product-susu.html">
+                        <img src="/docs/Susu-Picture.png" alt="Your Image" class="w-full h-auto rounded-lg">
+                    </a>
+                    <div
+                        class="absolute text-4xl font-semibold text-black bottom-2 left-3 opacity-0 transition-opacity p-3 duration-300 group-hover:opacity-100 max-md:hidden">
+                        Susu
+                    </div>
+                </div>
+
+                <div
+                    class="gambar-categories relative w-full h-full border-0 border-black rounded-lg inline-block group saturate-0 contrast-125 hover:saturate-150 hover:contrast-100 duration-300 max-md:contrast-100 max-md:saturate-100">
+                    <a href="/allproject/product-medicine.html">
+                        <img src="/docs/Medicine-Picture.png" alt="Your Image" class="w-full h-auto rounded-lg">
+                    </a>
+                    <div
+                        class="absolute text-4xl font-semibold text-black bottom-2 left-3 opacity-0 transition-opacity p-3 duration-300 group-hover:opacity-100 max-md:hidden">
+                        Medicine
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Hero Section -->
+
+    <!-- Best Seller Section -->
+
+    <section id="best-seller" class="w-5/6 mx-auto pt-12">
+        <div class="title-best-seller text-center font-['cabin'] font-extrabold text-4xl pt-10 pb-5">
+            <h1>BEST PRODUCT</h1>
+        </div><br>
+        <div class="content-best-seller grid grid-cols-4 gap-10">
+            <div
+                class="w-full max-w-sm shadow-md shadow-gray-300 bg-white border border-gray-200 rounded-lg  from-slate-100 to-gray-200">
+                <a href="#">
+                    <img class="p-8 rounded-t-lg hover:scale-125 transition duration-500" src="/docs/Madu-Picture.png"
+                        alt="product image" />
+                </a>
+                <hr>
+                <div class="px-5 pb-5 pt-5">
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-black">Madu Angkak</h5>
+                    </a>
+                    <div class="flex items-center my-1">
+                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <p class="ms-2 text-sm font-bold text-gray-900 dark:text-black">4.97</p>
+                        <span class="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
+                        <a href="#"
+                            class="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-black">69.376
+                            reviews</a>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-gray-900 dark:text-black">Rp54.000</span>
+                        <button
+                            class="gambar-categories2 overflow-hidden px-2.5 py-2.5 h-10 flex justify-center items-center bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative group">
+                            <ion-icon name="bag-add-outline"></ion-icon>
+
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-100 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute z-10">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm shadow-md shadow-gray-300 bg-white border border-gray-200 rounded-lg  from-slate-100 to-gray-200">
+                <a href="#">
+                    <img class="p-8 rounded-t-lg hover:scale-125 transition duration-500 cursor-pointer"
+                        src="/docs/medicine1-bs.png" alt="product image" />
+                </a>
+                <hr>
+                <div class="px-5 pb-5 pt-5">
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-black">Stevia</h5>
+                    </a>
+                    <div class="flex items-center my-1">
+                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <p class="ms-2 text-sm font-bold text-gray-900 dark:text-black">4.90</p>
+                        <span class="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
+                        <a href="#"
+                            class="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-black">84.274
+                            reviews</a>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-gray-900 dark:text-black">Rp41.300</span>
+                        <button
+                            class="gambar-categories2 overflow-hidden px-2.5 py-2.5 h-10 flex justify-center items-center bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative group">
+                            <ion-icon name="bag-add-outline"></ion-icon>
+
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-100 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute z-10">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm shadow-md shadow-gray-300 bg-white border border-gray-200 rounded-lg  from-slate-100 to-gray-200">
+                <a href="#">
+                    <img class="p-8 rounded-t-lg hover:scale-125 transition duration-500 cursor-pointer"
+                        src="/docs/medicine2-bs.png" alt="product image" />
+                </a>
+                <hr>
+                <div class="px-5 pb-5 pt-5">
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-black">Bawang Lanang
+                        </h5>
+                    </a>
+                    <div class="flex items-center my-1">
+                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <p class="ms-2 text-sm font-bold text-gray-900 dark:text-black">4.84</p>
+                        <span class="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
+                        <a href="#"
+                            class="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-black">52.187
+                            reviews</a>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-gray-900 dark:text-black">Rp28.500</span>
+                        <button
+                            class="gambar-categories2 overflow-hidden px-2.5 py-2.5 h-10 flex justify-center items-center bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative group">
+                            <ion-icon name="bag-add-outline"></ion-icon>
+
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-100 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute z-10">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-sm shadow-md shadow-gray-300 bg-white border border-gray-200 rounded-lg  from-slate-100 to-gray-200">
+                <a href="#">
+                    <img class="p-8 rounded-t-lg hover:scale-125 transition duration-500 cursor-pointer"
+                        src="/docs/madu1-bs.png" alt="product image" />
+                </a>
+                <hr>
+                <div class="px-5 pb-5 pt-5">
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-black">Madu Hitam Pahit
+                        </h5>
+                    </a>
+                    <div class="flex items-center my-1">
+                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <p class="ms-2 text-sm font-bold text-gray-900 dark:text-black">4.91</p>
+                        <span class="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
+                        <a href="#"
+                            class="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-black">77.893
+                            reviews</a>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-gray-900 dark:text-black">Rp69.700</span>
+                        <button
+                            class="gambar-categories2 overflow-hidden px-2.5 py-2.5 h-10 flex justify-center items-center bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative group">
+                            <ion-icon name="bag-add-outline"></ion-icon>
+
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-100 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center absolute w-36 h-28 -top-8 -left-2 bg-yellow-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
+                            <span
+                                class="flex justify-center items-center group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute z-10">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Best Seller Section -->
+
+    <!-- Rating Section -->
+
+    <section id="rating-section" class="w-full pt-20 font-['poppins']">
+        <div class="title-rating flex flex-col justify-center items-center sm:text-center">
+            <h1 class="text-4xl font-semibold tracking-wide ">Some reviews from buyers at this shop</h1>
+            <p class="pt-4 pb-6 text-xl font-normal tracking-widest hover:tracking-wider duration-200">This is the place
+                that sells herbal medicines for your body's health needs</p>
+            <div class="flex justify-center items-center">
+                <svg class="w-8 h-8 text-yellow-400 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-8 h-8 text-yellow-400 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-8 h-8 text-yellow-400 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-8 h-8 text-yellow-400 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <svg class="w-8 h-8 text-yellow-400 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                </svg>
+                <p class="pl-1 ms-1 text-xl font-medium text-gray-500 dark:text-gray-400">5.0</p>
+            </div>
+        </div>
+        <div class="content-rating flex flex-row justify-evenly items-center pt-7">
+            <div class="card-rating">
+                <div class="grid mb-8 shadow-sm md:mb-12 md:grid-cols-3">
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-b border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Terlepas dari manfaat kesehatan, saya senang menemukan
+                                bahwa rasa madu gurah syifacare sangat menyenangkan. Ini bukanlah salah satu suplemen
+                                herbal yang pahit atau sulit ditoleransi. Saya bahkan menantikan momen setiap hari untuk
+                                menikmati rasanya."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Anton Sumarton</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-b border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Melihat manfaat dan kualitas yang saya dapatkan, saya
+                                kira susu etawa syifacare menawarkan nilai yang luar biasa. Harganya wajar, terutama
+                                mengingat kualitas bahan-bahannya dan dampak positifnya pada kesehatan saya, saya
+                                menyarankan kalian untuk membeli susu etawa disini."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Lake Kanalpr</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-b border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Saya sangat peduli dengan kualitas bahan yang saya
+                                konsumsi, dan ace-max syifacare memenuhi standar tertinggi. Dengan menggunakan
+                                bahan-bahan alami berkualitas tinggi, saya merasa yakin bahwa saya memberikan yang
+                                terbaik untuk tubuh saya."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Hitaf La Lakiah</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-b border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Saya telah menggunakan gamat gold-g syifacare selama
+                                beberapa bulan, dan hasilnya luar biasa. Saya merasa lebih bertenaga, lebih fokus, dan
+                                bahkan tidur saya lebih baik. Produk ini memberikan manfaat kesehatan yang saya cari
+                                tanpa efek samping yang merugikan."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Suripto Al Agus</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-b border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Satu hal yang saya sukai adalah kemudahan penggunaan
+                                sagabumin syifacare. Saya tidak pernah lupa untuk mengonsumsinya karena kemasannya yang
+                                praktis. Ini sangat membantu saya menjaga konsistensi dalam mengambil suplemen herbal
+                                ini setiap hari."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Abu Hamzah</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-b border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Tidak seperti suplemen herbal lainnya yang saya coba,
+                                jahe merah syifacare memiliki rasa yang enak dan menyenangkan. Saya senang
+                                menyertakannya dalam rutinitas harian saya, dan rasanya membuat pengalaman kesehatan
+                                saya menjadi lebih menyenangkan."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Ummu Najmah</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Meskipun kualitasnya tinggi, susu harmoni syifacare
+                                memberikan nilai yang luar biasa. Harganya wajar, terutama mengingat manfaat kesehatan
+                                yang saya alami. Saya merasa bahwa investasi ini sangat berharga."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Zahra Amalia</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Saya tidak ragu membeli madu pahit pro syifacare. Ini
+                                adalah produk herbal terbaik yang pernah saya coba, dan saya sangat merekomendasikannya
+                                kepada siapa saja yang mencari solusi alami untuk meningkatkan kesehatan."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Azarine Ristekaziza</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="flex flex-col items-center justify-center p-8 text-center border-r border-gray-300 md:border-e bg-slate-50">
+                        <blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8">
+                            <h3 class="text-2xl tracking-wide font-semibold dark:text-black">Costumer's Rating</h3>
+                            <p class="my-4 dark:text-gray-400">"Saya bersyukur menemukan madu angkak di toko syifacare
+                                dan berencana untuk terus menggunakannya sebagai bagian penting dari perawatan kesehatan
+                                saya. Terima kasih, Syifacare, atas produk madu luar biasa ini!"</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <ion-icon name="person-circle-outline" class="text-4xl text-black pr-1"></ion-icon>
+                            <div class="space-y-0.5 font-medium dark:text-black text-left rtl:text-right ms-3">
+                                <div>Balqis F</div>
+                                <div class="text-sm dark:text-gray-400 ">Customer</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Rating Section -->
+
+    <!-- Footer section -->
+
+    <section id="footer" class="w-full font-['poppins']">
+        <footer class="shadow-sm shadow-gray-400 dark:bg-slate-50">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        <img src="/docs/syifa care.png" class="h-8" alt="Syifacare Logo" />
+                        <span
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black font-['poppins'] tracking-normal hover:tracking-widest duration-200">Syifacare</span>
+                    </a>
+                    <ul
+                        class="flex flex-wrap items-center mb-6 text-sm font-medium text-black sm:mb-0  dark:text-black">
+                        <li>
+                            <a href="/allproject/about.html" target="_blank"
+                                class="hover:underline underline-offset-4 me-4 md:me-6 tracking-normal hover:tracking-wider duration-200">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="hover:underline underline-offset-4 me-4 md:me-6 tracking-normal hover:tracking-wider duration-200">Privacy
+                                Policy</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="hover:underline underline-offset-4 me-4 md:me-6 tracking-normal hover:tracking-wider duration-200">Licensing</a>
+                        </li>
+                        <li>
+                            <a href="/allproject/about.html" target="_blank"
+                                class="hover:underline underline-offset-4 tracking-normal hover:tracking-wider duration-200">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-bltext-black sm:mx-auto dark:border-bltext-black lg:my-8" />
+                <span class="block text-sm text-black sm:text-center dark:text-black">© 2024 <a href="#"
+                        class="hover:underline underline-offset-4">Syifacare™</a>. All Rights Reserved.</span>
+            </div>
+        </footer>
+    </section>
+
+    <!-- End Footer section -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
